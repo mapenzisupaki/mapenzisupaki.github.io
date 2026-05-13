@@ -413,7 +413,7 @@ export function AvailabilityBadge() {
         </defs>
         <text>
           <textPath href={`#${pathId}`} startOffset="0%">
-            INDEPENDENT CONTRACTOR . AVAILABLE REMOTE .
+            INDEPENDENT CONSULTANT . AVAILABLE REMOTE .
           </textPath>
         </text>
       </svg>
