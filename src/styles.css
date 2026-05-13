@@ -145,37 +145,35 @@ textarea {
   align-items: center;
   justify-content: center;
   justify-self: center;
-  gap: 9px;
-  min-height: 36px;
-  padding: 8px 15px;
-  border: 1px solid rgba(61, 91, 59, 0.2);
-  border-radius: 999px;
+  gap: 8px;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
   color: #3d5b3b;
-  background: rgba(216, 242, 236, 0.72);
-  box-shadow: 0 14px 30px rgba(61, 91, 59, 0.1);
-  font-size: 0.78rem;
+  background: transparent;
+  box-shadow: none;
+  font-size: 0.72rem;
   font-weight: 820;
-  line-height: 1;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+  text-transform: uppercase;
   transition:
     transform 180ms ease,
-    border-color 180ms ease,
-    background 180ms ease;
-  animation: availability-flash 2.4s ease-in-out infinite;
+    color 180ms ease;
 }
 
 .availability-pill span {
-  width: 9px;
-  height: 9px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: #43b447;
-  box-shadow: 0 0 0 6px rgba(67, 180, 71, 0.16);
+  box-shadow: 0 0 0 5px rgba(67, 180, 71, 0.12);
   animation: availability-dot 1.6s ease-in-out infinite;
 }
 
 .availability-pill:hover {
   color: #2f4e31;
-  background: rgba(222, 255, 197, 0.82);
-  border-color: rgba(61, 91, 59, 0.34);
   transform: translateY(-1px);
 }
 
@@ -277,6 +275,44 @@ textarea {
   font-weight: 760;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.profile-details .availability-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: start;
+  gap: 8px;
+  width: fit-content;
+  min-height: 28px;
+  margin-top: 0;
+  padding: 6px 11px;
+  border: 1px solid rgba(61, 91, 59, 0.2);
+  border-radius: 999px;
+  color: #3d5b3b;
+  background: rgba(216, 242, 236, 0.72);
+  box-shadow: 0 10px 22px rgba(61, 91, 59, 0.08);
+  font-size: 0.7rem;
+  font-weight: 820;
+  letter-spacing: 0;
+  line-height: 1;
+  text-transform: none;
+  animation: availability-flash 2.4s ease-in-out infinite;
+}
+
+.profile-details .availability-pill span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #43b447;
+  box-shadow: 0 0 0 5px rgba(67, 180, 71, 0.12);
+  animation: availability-dot 1.6s ease-in-out infinite;
+}
+
+.profile-details .availability-pill:hover {
+  color: #2f4e31;
+  background: rgba(222, 255, 197, 0.82);
+  transform: translateY(-1px);
 }
 
 .profile-socials {
@@ -403,12 +439,12 @@ textarea {
 @keyframes availability-flash {
   0%,
   100% {
-    box-shadow: 0 14px 30px rgba(61, 91, 59, 0.1);
+    box-shadow: 0 10px 22px rgba(61, 91, 59, 0.08);
   }
   50% {
     box-shadow:
-      0 14px 30px rgba(61, 91, 59, 0.14),
-      0 0 0 5px rgba(216, 242, 236, 0.46);
+      0 10px 22px rgba(61, 91, 59, 0.12),
+      0 0 0 4px rgba(216, 242, 236, 0.44);
   }
 }
 
@@ -416,11 +452,11 @@ textarea {
   0%,
   100% {
     transform: scale(1);
-    box-shadow: 0 0 0 6px rgba(67, 180, 71, 0.16);
+    box-shadow: 0 0 0 5px rgba(67, 180, 71, 0.12);
   }
   50% {
     transform: scale(1.12);
-    box-shadow: 0 0 0 9px rgba(67, 180, 71, 0.08);
+    box-shadow: 0 0 0 8px rgba(67, 180, 71, 0.06);
   }
 }
 
@@ -1371,15 +1407,36 @@ p {
   letter-spacing: 0.07em;
 }
 
+.badge-mail-link {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  color: inherit;
+}
+
 .availability-badge .icon {
   width: 34px;
   height: 34px;
   padding: 7px;
-  position: relative;
-  z-index: 1;
   border: 1px solid rgba(50, 39, 58, 0.62);
   border-radius: 9px;
   background: rgba(255, 247, 237, 0.86);
+  transition:
+    transform 180ms ease,
+    background 180ms ease;
+}
+
+.badge-mail-link:hover .icon,
+.badge-mail-link:focus-visible .icon {
+  background: #fff7ed;
+  transform: translateY(-1px);
+}
+
+.badge-mail-link:focus-visible {
+  border-radius: 12px;
+  outline: 3px solid rgba(50, 39, 58, 0.22);
+  outline-offset: 4px;
 }
 
 .availability-badge:hover svg {

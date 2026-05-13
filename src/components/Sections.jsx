@@ -417,7 +417,9 @@ export function AvailabilityBadge() {
           </textPath>
         </text>
       </svg>
-      <Icon name="mail" />
+      <a className="badge-mail-link" href={`mailto:${profile.email}`} aria-label={`Email ${profile.name}`}>
+        <Icon name="mail" />
+      </a>
     </div>
   );
 }

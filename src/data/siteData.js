@@ -15,9 +15,9 @@ export const profile = {
     "At the intersection of product strategy, customer intelligence, and AI for SaaS, FinTech, and product-led teams.",
   avatar: "/profile-pic.jpg",
   socials: [
-    { label: "LinkedIn", href: "https://www.linkedin.com/" },
-    { label: "GitHub", href: "https://github.com/" },
-    { label: "Medium", href: "https://theaiprodigy.medium.com/" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/mapenzi-supaki/" },
+    { label: "GitHub", href: "https://github.com/mapenzisupaki" },
+    { label: "Medium", href: "https://throughmydatalens.medium.com/" },
   ],
 };
 

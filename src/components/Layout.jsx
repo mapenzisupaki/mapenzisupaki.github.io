@@ -23,10 +23,6 @@ export default function Layout() {
         <div className="avatar">
           <img src={profile.avatar} alt={`${profile.name} profile`} />
         </div>
-        <Link className="availability-pill" to="/contact" aria-label="Available for work. Open contact page.">
-          <span aria-hidden="true"></span>
-          Available for work
-        </Link>
         <div className="profile-title">
           <h1>{profile.name}</h1>
           <p>{profile.role}</p>
@@ -53,10 +49,10 @@ export default function Layout() {
           </div>
           <div>
             <Icon name="calendar" />
-            <span>
-              <small>Availability</small>
-              {profile.availability}
-            </span>
+            <Link className="availability-pill" to="/contact" aria-label="Available for work. Open contact page.">
+              <span aria-hidden="true"></span>
+              Available for work
+            </Link>
           </div>
         </div>
         <div className="profile-socials">
