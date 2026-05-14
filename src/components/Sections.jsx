@@ -251,9 +251,14 @@ export function DataExperienceSection() {
         ))}
       </div>
       <div className="cv-action">
-        <a className="button-link cv-button" href={profile.cvUrl} target="_blank" rel="noreferrer">
-        <Icon name="file" />
-          Download CV
+        <a
+          className="button-link cv-button"
+          href={profile.socials.find((social) => social.label === "LinkedIn")?.href}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Icon name="file" />
+          View Resume
         </a>
       </div>
     </section>
