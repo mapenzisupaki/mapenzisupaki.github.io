@@ -317,6 +317,81 @@ export const testimonials = [
 
 export const posts = [
   {
+    slug: "fintech-kyc-onboarding-analysis",
+    title: "FinTech KYC Onboarding Analysis",
+    category: "FinTech / Product Analytics",
+    date: "Mar 20, 2026",
+    excerpt:
+      "A deep-dive into why 93 out of 100 users never finish KYC, what the funnel data reveals, and which interventions can recover activation.",
+    image: "https://www.ms.co.ke/wp-content/uploads/2026/04/kyc-analysis.png",
+    highlights: [
+      "100,000 users started KYC",
+      "605 reached approval",
+      "0.6% completion rate",
+      "54.2% manual-review drop-off",
+    ],
+    body: [
+      "In most FinTech products, KYC is not optional. It sits between acquisition spend and the first active user. You cannot fund a wallet, send money, or access credit without clearing it, which means every user who drops out of the KYC funnel is acquisition budget spent with no activation, revenue, or return.",
+      "The analysis reviewed 100,000 user journeys across a 10-step KYC funnel, combining event telemetry, session data, device profiles, network logs, and user demographics. The issue was not one catastrophic failure. It was a slow, steady bleed at every step, driven by friction that no single intervention can fully solve.",
+      "Only 605 out of 100,000 users successfully completed the KYC process. A further 13.1% ended in an unrecoverable failure state, 22.2% abandoned before a final outcome, and the rest were stuck in partial completion or early-stage drop-off.",
+      "The largest absolute losses happened before users reached the technical verification steps. Personal information, phone verification, and document upload were the three steepest drop-off points by volume, which points to UX and process friction rather than pure backend failure.",
+      "Manual review was the highest-rate bottleneck. By the time a user reaches manual review, they have already invested time and cleared multiple steps, yet more than half never advance. That is a communication and operations problem: users are placed into a queue without status, expected timing, or confidence that anything is happening.",
+      "The error distribution also revealed a practical product opportunity. The major failure modes were post-submission errors that could be caught before submission: face mismatch, document rejection, network timeout, and blurry documents.",
+      "The recommendations were straightforward: add real-time document quality checks, selfie guidance overlays, manual review notifications, shorter personal-information steps, localized address input, chunked resumable uploads, and client-side compression.",
+      "The broader lesson is that KYC is not just a compliance workflow. It is an activation gate. If product teams treat it as a black box, they will continue losing high-intent users before those users ever experience the core product.",
+    ],
+  },
+  {
+    slug: "you-are-targeting-the-wrong-people",
+    title: "Are you targeting the wrong people? Your model might be to blame!",
+    category: "Growth Analytics / ML",
+    date: "Feb 6, 2026",
+    excerpt:
+      "A practitioner’s guide to propensity models, look-alike models, and knowing which one to use for growth, retention, and acquisition.",
+    image: "https://www.ms.co.ke/wp-content/uploads/2020/06/Screenshot-2026-04-20-040827-2-scaled.png",
+    highlights: [
+      "Propensity models score known users",
+      "Look-alike models find new audiences",
+      "Model choice follows the business question",
+      "Better targeting starts with clearer intent",
+    ],
+    body: [
+      "There is a version of this story that plays out at almost every growth-stage company: the marketing team is running campaigns, the data team has shipped a model, conversion rates are acceptable, and yet cost per acquisition keeps climbing. Leadership asks for better targeting, the data team builds something more sophisticated, and the needle barely moves.",
+      "The problem is often not a lack of models. It is a lack of clarity about what each model is solving for.",
+      "Two modelling approaches dominate audience intelligence: propensity models and look-alike models. Both are powerful. Both are legitimate. And both are routinely misapplied in ways that quietly erode marketing ROI while dashboards still appear healthy on the surface.",
+      "Most targeting challenges reduce to two different questions. Among the people we already know, who is most likely to do what we want them to do next? Among the people we do not know yet, who is most likely to become a great customer if we reach them?",
+      "Propensity models answer the first question. They assign a probability score to individuals in a known population, estimating how likely each person is to perform a specific action within a specific timeframe.",
+      "Look-alike models answer the second question. They help teams identify new people who resemble a high-value seed audience, making them useful for acquisition, expansion, and prospecting.",
+      "The distinction matters because the data, modelling logic, validation approach, and activation strategy are different. A propensity model is usually a classification problem over known users. A look-alike model is usually a similarity and audience expansion problem over unknown or external audiences.",
+      "For FinTech, SaaS, telecom, and e-commerce teams, the practical lesson is simple: model sophistication is not the strategy. The strategy starts with the decision: retention, upsell, acquisition, product adoption, risk, or personalization. The model should follow that decision, not the other way around.",
+    ],
+  },
+  {
+    slug: "unsung-hero-of-digital-success-product-data-scientist",
+    title: "Unsung Hero of Digital Success: Product Data Scientist",
+    category: "Product Analytics / Careers",
+    date: "Jan 10, 2026",
+    excerpt:
+      "Why product data scientists sit at the center of digital product decisions, experimentation, customer behavior, and growth.",
+    image: "https://www.ms.co.ke/wp-content/uploads/2026/03/Screenshot-2026-03-19-132724-scaled.png",
+    highlights: [
+      "Product strategy meets data science",
+      "User behavior becomes product direction",
+      "Experiments turn opinions into evidence",
+      "Digital products need decision infrastructure",
+    ],
+    body: [
+      "In today’s digital economy, data is no longer a support function. It is a core driver of product innovation, growth, and competitive edge. Think about Spotify, Netflix, Airbnb, Uber, or SaaS platforms launching new features. These companies do not only use data to understand what happened; they use it to decide what to build next.",
+      "Somewhere between the hype around data science and the reality of most data teams, a quieter and more focused specialization has emerged: the Product Data Scientist.",
+      "A Product Data Scientist sits at the intersection of data science, product management, and business strategy. Their work is focused on improving digital products through data-driven insight, experimentation, and decision-making.",
+      "Unlike a traditional data scientist, they are embedded in the product development lifecycle. They work alongside product managers, UX designers, and engineers to answer questions like why users drop off during onboarding, which feature improves retention, or what behavior predicts long-term value.",
+      "Everything a product data scientist does, from dashboards and experiments to user segmentation and predictive models, ultimately helps teams understand and improve the metrics that define whether a product is creating value for users and the business.",
+      "Traditional data scientists often optimize systems. Product data scientists optimize experiences. The former may think primarily in models and pipelines. The latter thinks in user journeys, decision loops, and product outcomes.",
+      "Their responsibilities usually cluster around metric design, experimentation, user-behavior analysis, product-focused modelling, and strategic partnership with product teams.",
+      "The product data scientist is the professional the industry evolved to close the loop between what users do and what teams decide to build. For leaders building product teams, the role is not optional. It is connective tissue between product strategy and reality.",
+    ],
+  },
+  {
     slug: "why-causal-analysis-is-revolutionizing-bfsi-decision-making",
     aliases: ["causal-analysis-bfsi"],
     title: "Why Causal Analysis is Revolutionizing BFSI Decision-Making",

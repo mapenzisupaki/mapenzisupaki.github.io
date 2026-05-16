@@ -21,6 +21,13 @@ export default function BlogPost() {
         <p>{post.excerpt}</p>
       </div>
       <img className="detail-image" src={post.image} alt={`${post.title} cover`} />
+      {post.highlights ? (
+        <div className="article-highlights" aria-label="Article highlights">
+          {post.highlights.map((highlight) => (
+            <span key={highlight}>{highlight}</span>
+          ))}
+        </div>
+      ) : null}
       <div className="article-body">
         {post.body.map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>
