@@ -317,21 +317,6 @@ export const testimonials = [
 
 export const posts = [
   {
-    slug: "ai-product-intelligence",
-    title: "AI product intelligence: when dashboards become conversations.",
-    category: "AI & Product Strategy",
-    date: "Sep 2026",
-    excerpt:
-      "Why the next layer of product analytics is conversational, decision-oriented, and grounded in customer intelligence.",
-    image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
-    body: [
-      "The most useful AI systems do not only summarize charts. They help teams ask better questions, connect customer signals, and reason through product tradeoffs.",
-      "For product teams, the opportunity is to move from passive dashboards to decision systems that explain what changed, why it matters, and what to investigate next.",
-      "That is where AI, analytics, and customer intelligence become a practical product strategy advantage.",
-    ],
-  },
-  {
     slug: "why-causal-analysis-is-revolutionizing-bfsi-decision-making",
     aliases: ["causal-analysis-bfsi"],
     title: "Why Causal Analysis is Revolutionizing BFSI Decision-Making",
