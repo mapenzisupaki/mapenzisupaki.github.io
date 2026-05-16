@@ -369,13 +369,18 @@ export function BlogCard({ post }) {
         <img src={post.image} alt={`${post.title} article preview`} />
       </Link>
       <div>
-        <p className="meta">
-          {post.date} / {post.category}
-        </p>
+        <div className="blog-card-meta">
+          <span>{post.category}</span>
+          <span>{post.date}</span>
+        </div>
         <h3>
           <Link to={`/blog/${post.slug}`}>{post.title}</Link>
         </h3>
         <p>{post.excerpt}</p>
+        <Link className="blog-read-link" to={`/blog/${post.slug}`}>
+          Read article
+          <Icon name="arrowRight" />
+        </Link>
       </div>
     </article>
   );

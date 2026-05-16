@@ -4,7 +4,7 @@ import NotFound from "./NotFound.jsx";
 
 export default function BlogPost() {
   const { slug } = useParams();
-  const post = posts.find((item) => item.slug === slug);
+  const post = posts.find((item) => item.slug === slug || item.aliases?.includes(slug));
 
   if (!post) return <NotFound />;
 
